@@ -63,6 +63,5 @@ if __name__ == "__main__":
     k  = int(input("Enter K Value :"))
 
     Print_list(head)
-    # head = kAltReverse(head, k)
     head = ReverseK(head, k)
     Print_list(head)
