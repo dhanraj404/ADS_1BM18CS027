@@ -34,29 +34,6 @@ Node* insertBeg(Node* head, int val) {
   node->link = XOR(NULL, head);
   return node;
 }
-
-Node* deleteBeg(Node* head){
-    if(!head){
-        cout<<"The List is Empty";
-        return head;
-    }
-    else
-    {
-        Node* curr = head;
-        head = XOR(curr->link, NULL);
-        return head;
-    }   
-}
-
-Node* deleteEnd(Node* head){
-    if(!head){
-        cout<<"The List is Empty";
-        return head;
-    }
-    else{
-
-    }
-}
 void printList(Node* curr) {
   Node* prev = NULL;
   while (curr) {
@@ -76,18 +53,16 @@ int main() {
         switch(choice){
             case 1: cout<<"Enter a Element:";
                     cin>>val;  
-                    head = insertEnd(head, val);
+                    head = insertBeg(head, val);
                     printList(head);
                     break;
             case 2: cout<<"Enter a Element:";
                     cin>>val; 
-                    head = insertBeg(head, val);
+                    head = insertEnd(head, val);
                     printList(head);
                     break;
             case 3: exit(0);
                     break;
-            case 4:head = deleteBeg(head);
-                break;
         }
     }while(1);
     return 0;
