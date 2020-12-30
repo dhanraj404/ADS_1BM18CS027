@@ -1,6 +1,4 @@
-/*
-Given an array of N distinct elements, the task is to find all elements in array except two greatest elements.
-*/
+//Given an array of N distinct elements, the task is to find all elements in array except two greatest elements.
 #include<iostream>
 #include<algorithm>
 using namespace std;

@@ -6,6 +6,10 @@ using namespace std;
 
 int unique(int a)
 {
+    // neg numbers check
+    if (a < 0){
+        a*=-1;
+    }
     int b[10]={0},p=1;
     while(a)
     {
